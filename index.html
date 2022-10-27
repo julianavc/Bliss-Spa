@@ -3,66 +3,74 @@
   <head>
     <meta charset="UTF-8" />
     <title>Bliss Spa.</title>
+
+    <!--STYLE-->
+    <link rel="stylesheet" href="style.css" />
+
+    <!--ICONS-->
+    <link rel="stylesheet" href="assets/style.css" />
   </head>
   <body>
-    <header>
-      <nav>
-        <a class="logo" href="">Bliss <span>Spa</span>. </a>
-        <div>
+    <header id="header">
+      <nav class="container">
+        <a class="logo" href="#home">Bliss <span>Spa</span>. </a>
+        <div class="menu">
           <!--MENU-->
-          <ul>
-            <li><a href="">Inicio</a></li>
-            <li><a href="">Sobre</a></li>
-            <li><a href="">Serviços</a></li>
-            <li><a href="">Avaliações</a></li>
-            <li><a href="">Contato</a></li>
+          <ul class="grid">
+            <li><a class="title" href="#home">Inicio</a></li>
+            <li><a class="title" href="#about">Sobre</a></li>
+            <li><a class="title" href="#services">Serviços</a></li>
+            <li><a class="title" href="#services">Avaliações</a></li>
+            <li><a class="title" href="#contact">Contato</a></li>
           </ul>
         </div>
+        <div class="icon-menu"></div>
+        <div class="icon-close"></div>
         <!--/MENU-->
       </nav>
     </header>
 
     <main>
       <!--INICIO-->
-      <section>
-        <div>
-          <div>
+      <section id="home" class="section">
+        <div class="container grid">
+          <div class="image">
             <img
               src="https://media.istockphoto.com/photos/cheerful-smiling-young-woman-massaging-face-cheek-bones-beauty-model-picture-id1343145458?k=20&m=1343145458&s=612x612&w=0&h=-9mVFtqVewMp9yxbjuDU-czu7ofp77DN68U0ixHH28E="
               alt="Mulher sorrindo"
             />
           </div>
           <div>
-            <h2>Spa.</h2>
-            <p>
+            <h2 class="title">Bliss Spa.</h2>
+            <p class="text">
               No mercado a mais de quinze anos, <strong>Bliss Spa</strong> é
               reconhecido pelos seus tratamentos naturais e personalizados para
               todo tipo de pele.
             </p>
-            <a href="">Agendar um horario</a>
+            <a class="button" href="">Agendar um horario</a>
           </div>
         </div>
       </section>
       <!--/INICIO-->
       <!--SOBRE-->
-      <section>
-        <div>
-          <div>
+      <section id="about" class="section">
+        <div class="container grid">
+          <div class="image">
             <img
               src="https://media.istockphoto.com/photos/luxury-spa-massage-room-interior-with-massage-tables-hot-tub-and-picture-id1357705422?k=20&m=1357705422&s=612x612&w=0&h=BA6bDcyh5U68kwJrY27I8hhsQJC3ii_rmuNYHL9r9AY="
               alt="Interior de um Spa."
             />
           </div>
           <div>
-            <h2>Sobre nós:</h2>
-            <p>
+            <h2 class="title">Sobre nós:</h2>
+            <p class="text">
               Lorem ipsum dolor sit amet consectetur, adipisicing elit. Natus
               dolore tenetur cum, voluptatibus itaque nam aspernatur accusantium
               optio nulla recusandae deserunt possimus magnam ex in? Commodi
               expedita tempora vero quisquam.
             </p>
             <br />
-            <p>
+            <p class="text">
               Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sit at
               ullam non, debitis corporis, exercitationem, recusandae odio
               incidunt pariatur adipisci obcaecati accusantium similique nihil
@@ -73,11 +81,11 @@
       </section>
       <!--/SOBRE-->
       <!--SERVIÇOS-->
-      <section>
-        <div>
+      <section id="services" class="section">
+        <div class="container grid">
           <div>
-            <h2>Conheça nossos serviços:</h2>
-            <p>
+            <h2 class="title">Conheça nossos serviços:</h2>
+            <p class="text">
               Com mais de 10 anos no mercado, <strong>Bliss SPA</strong> é
               reconhecido pelos seus tratamentos exclusivos e totalmente
               naturais.
@@ -85,7 +93,8 @@
           </div>
           <div>
             <div>
-              <h3>Cuidados com a pele</h3>
+              <i class="icon-cosmetic"></i>
+              <h3 class="title">Cuidados com a pele</h3>
               <p>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit.
                 Inventore, placeat ducimus odit libero, eveniet illo iste
@@ -94,7 +103,8 @@
               </p>
             </div>
             <div>
-              <h3>Tratamentos naturais</h3>
+              <i class="icon-flower"></i>
+              <h3 class="title">Tratamentos naturais</h3>
               <p>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum
                 temporibus nesciunt consectetur repudiandae non consequuntur
@@ -103,7 +113,8 @@
               </p>
             </div>
             <div>
-              <h3>Sessões de relaxamento</h3>
+              <i class="icon-hand"></i>
+              <h3 class="title">Sessões de relaxamento</h3>
               <p>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima
                 blanditiis repellendus, reprehenderit tenetur veritatis tempora
@@ -117,10 +128,10 @@
       </section>
       <!--/SERVIÇOS-->
       <!--AVALIAÇÕES-->
-      <section>
+      <section id="testimonies" class="section">
         <div>
           <header>
-            <h2>Quem já passou por aqui:</h2>
+            <h2 class="title">Quem já passou por aqui:</h2>
           </header>
           <div>
             <div>
@@ -165,10 +176,10 @@
                   </p>
                   <cite>
                     <img
-                      src="https://randomuser.me/api/portraits/women/62.jpg"
+                      src="https://randomuser.me/api/portraits/women/70.jpg"
                       alt="Maria Almeida"
                     />
-                    Maria Almeida
+                    Samira Almeida
                   </cite>
                 </blockquote>
               </div>
@@ -178,14 +189,19 @@
       </section>
       <!--/AVALIAÇÕES-->
       <!--CONTATO-->
-      <section>
+      <section id="contact" class="section">
         <div>
           <div>
-            <h2>Entre em contato</h2>
-            <p>
-              Entre contato com <strong>Bliss Spa.</strong> Gostariamos de ouvir
+            <h2 class="title">Entre em contato</h2>
+            <p class="text">
+              Entre contato com <strong>Bliss Spa</strong>. Gostariamos de ouvir
               suas sugestões e criticas
             </p>
+            <a
+              class="button"
+              href="https://wa.me/5511959184371?text=Ol%C3%A1%2C+gostaria+de+agendar+um+hor%C3%A1rio%21"
+              ><i class="icon-whatsapp"></i>Entre em contato</a
+            >
           </div>
         </div>
       </section>
