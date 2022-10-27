@@ -13,7 +13,7 @@
   <body>
     <header id="header">
       <nav class="container">
-        <a class="logo" href="#home">Bliss <span>Spa</span>. </a>
+        <a class="logo" href="#home">Bliss <span>SPA</span>. </a>
         <div class="menu">
           <!--MENU-->
           <ul class="grid">
@@ -24,8 +24,8 @@
             <li><a class="title" href="#contact">Contato</a></li>
           </ul>
         </div>
-        <div class="icon-menu"></div>
-        <div class="icon-close"></div>
+        <div class="toggle icon-menu"></div>
+        <div class="toggle icon-close"></div>
         <!--/MENU-->
       </nav>
     </header>
@@ -40,14 +40,14 @@
               alt="Mulher sorrindo"
             />
           </div>
-          <div>
+          <div class="text">
             <h2 class="title">Bliss Spa.</h2>
-            <p class="text">
-              No mercado a mais de quinze anos, <strong>Bliss Spa</strong> é
+            <p>
+              No mercado a mais de quinze anos, <strong>Bliss SPA</strong> é
               reconhecido pelos seus tratamentos naturais e personalizados para
               todo tipo de pele.
             </p>
-            <a class="button" href="">Agendar um horario</a>
+            <a class="button" href="#">Agendar um horario</a>
           </div>
         </div>
       </section>
@@ -61,16 +61,16 @@
               alt="Interior de um Spa."
             />
           </div>
-          <div>
+          <div class="text">
             <h2 class="title">Sobre nós:</h2>
-            <p class="text">
+            <p>
               Lorem ipsum dolor sit amet consectetur, adipisicing elit. Natus
               dolore tenetur cum, voluptatibus itaque nam aspernatur accusantium
               optio nulla recusandae deserunt possimus magnam ex in? Commodi
               expedita tempora vero quisquam.
             </p>
             <br />
-            <p class="text">
+            <p>
               Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sit at
               ullam non, debitis corporis, exercitationem, recusandae odio
               incidunt pariatur adipisci obcaecati accusantium similique nihil
@@ -83,16 +83,16 @@
       <!--SERVIÇOS-->
       <section id="services" class="section">
         <div class="container grid">
-          <div>
+          <header>
             <h2 class="title">Conheça nossos serviços:</h2>
             <p class="text">
               Com mais de 10 anos no mercado, <strong>Bliss SPA</strong> é
               reconhecido pelos seus tratamentos exclusivos e totalmente
               naturais.
             </p>
-          </div>
-          <div>
-            <div>
+          </header>
+          <div class="cards grid">
+            <div class="card">
               <i class="icon-cosmetic"></i>
               <h3 class="title">Cuidados com a pele</h3>
               <p>
@@ -102,7 +102,7 @@
                 quo vitae nihil veniam blanditiis.
               </p>
             </div>
-            <div>
+            <div class="card">
               <i class="icon-flower"></i>
               <h3 class="title">Tratamentos naturais</h3>
               <p>
@@ -112,7 +112,7 @@
                 deserunt eveniet tempora ad, aperiam dicta saepe.
               </p>
             </div>
-            <div>
+            <div class="card">
               <i class="icon-hand"></i>
               <h3 class="title">Sessões de relaxamento</h3>
               <p>
@@ -129,13 +129,13 @@
       <!--/SERVIÇOS-->
       <!--AVALIAÇÕES-->
       <section id="testimonies" class="section">
-        <div>
+        <div class="container swiper">
           <header>
             <h2 class="title">Quem já passou por aqui:</h2>
           </header>
-          <div>
-            <div>
-              <div>
+          <div class="testimonies swiper">
+            <div class="swiper-wrapper">
+              <div class="testimonial swiper-slide">
                 <blockquote>
                   <p>
                     Lorem ipsum, dolor sit amet consectetur adipisicing elit.
@@ -151,7 +151,7 @@
                   </cite>
                 </blockquote>
               </div>
-              <div>
+              <div class="testimonial swiper-slide">
                 <blockquote>
                   <p>
                     Lorem ipsum, dolor sit amet consectetur adipisicing elit.
@@ -167,7 +167,7 @@
                   </cite>
                 </blockquote>
               </div>
-              <div>
+              <div class="testimonial swiper-slide">
                 <blockquote>
                   <p>
                     Lorem ipsum, dolor sit amet consectetur adipisicing elit.
@@ -190,10 +190,10 @@
       <!--/AVALIAÇÕES-->
       <!--CONTATO-->
       <section id="contact" class="section">
-        <div>
-          <div>
+        <div class="container grid">
+          <div class="text">
             <h2 class="title">Entre em contato</h2>
-            <p class="text">
+            <p>
               Entre contato com <strong>Bliss Spa</strong>. Gostariamos de ouvir
               suas sugestões e criticas
             </p>
@@ -203,9 +203,37 @@
               ><i class="icon-whatsapp"></i>Entre em contato</a
             >
           </div>
+
+          <div class="links">
+            <ul class="grid">
+              <li><i class="icon-phone"></i> 11 959184371</li>
+              <li><i class="icon-map-pin"></i>Av. Principal, 123</li>
+              <li><i class="icon-mail"></i>contato@blisspa.com</li>
+            </ul>
+          </div>
         </div>
       </section>
       <!--/CONTATO-->
+      <footer class="section">
+        <div class="container grid">
+          <div class="brand">
+            <a class="logo" href="#home">Bliss <span>SPA</span>.</a>
+            <p>©2022 Bliss SPA</p>
+            <p>Todos os direitos reservados</p>
+          </div>
+          <div class="social grid">
+            <a href="https://www.instagram.com/zu__carvalho/" target="_blank"
+              ><i class="icon-instagram"></i> Bliss SPA</a
+            >
+            <a href="https://www.facebook.com/" target="_blank"
+              ><i class="icon-facebook"></i> Bliss SPA</a
+            >
+            <a href="https://www.youtube.com/" target="_blank"
+              ><i class="icon-youtube"> Bliss SPA</i></a
+            >
+          </div>
+        </div>
+      </footer>
     </main>
   </body>
 </html>
